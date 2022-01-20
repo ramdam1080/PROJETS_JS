@@ -6,8 +6,9 @@
 header
     background-color: #e6e6cc
     height: 780px
+    overflow: hidden
 
-.parentlogo 
+.parentlogo
     flex: 1
 .form
     flex: 2
@@ -19,14 +20,14 @@ li
 a
     text-decoration: none
 .border-nav
-    border-bottom: 1px solid lightgray 
+    border-bottom: 1px solid lightgray
     margin-bottom: 50px
 
 .ligne
-    height:2px
+    height: 2px
     border-bottom: 1px solid black
     width: 30px
-    margin-top: 9px 
+    margin-top: 9px
 .fs-7
     font-size: 13px
 .fs-0
@@ -38,7 +39,6 @@ header
         color: black
 .vertical
     margin-top: 15px
-    
 
     writing-mode: vertical-lr
     transform: rotate(180deg)
@@ -50,9 +50,79 @@ nav
 
 .petit
     margin-top: 10px
-    height: 30px 
+    height: 30px
     width: 40px
     background-color: white
 .blanc
-    right:0%
+    right: 0%
     cursor: pointer
+.section1
+    margin-top: 70px
+    color: gray
+    p
+        border-right: 2px solid lightgray
+        padding-right: 115px
+.nav-responsive
+    display: none
+@media (min-width: 576px) and (max-width:768px)
+    .nav-responsive
+        display: block
+        font-size: 30px
+    .form
+        order: -1
+        flex-direction: column
+        li
+            display: none
+    header
+        height: 100%
+        h2
+            font-size: 25px !important
+    .sac
+        width: 300px
+    .section1
+        p
+            padding: 30px
+
+@media (max-width:576px)
+    .nav-responsive
+        display: block
+        font-size: 20px
+    .icon
+        font-size: 10px
+    .logo
+        width: 50px
+    .form
+        order: -1
+        flex-direction: column
+        li
+            display: none
+    .pvertical
+        display: flex
+        justify-content: center
+    .vertical
+        margin: 0
+    .women
+        font-size: 80px    
+    header
+        height: 100%
+        h2
+            font-size: 25px !important
+    .sac
+        width: 300px
+    .section1
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        p
+            padding: 0
+            border-right: none
+            border-bottom: 1px solid gray
+
+.about
+    height: 20px
+.container2
+    margin: 0 17%
+.harmony
+    font-size: 22px
+.p
+    padding: 100px 0
