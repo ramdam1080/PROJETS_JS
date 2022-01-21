@@ -17238,6 +17238,10 @@ header {
   overflow: hidden;
 }
 
+nav {
+  z-index: 2;
+}
+
 .parentlogo {
   flex: 1;
 }
@@ -17458,6 +17462,33 @@ nav a:hover {
   .section2 p {
     font-size: 10px;
   }
+}
+.coeur {
+  position: absolute;
+  top: -6px;
+  left: -8px;
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+}
+
+.panier {
+  position: absolute;
+  top: -6px;
+  left: -8px;
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+}
+
+.btns2 {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
