@@ -17491,4 +17491,52 @@ nav a:hover {
   font-size: 14px;
 }
 
+.section4 {
+  background-color: #e6e6cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.papacarousel {
+  width: 134vh;
+  overflow: hidden;
+}
+
+.carousell {
+  width: 65vh;
+}
+
+.elementc {
+  background-color: white;
+  padding: 20px;
+}
+
+.droite {
+  transform: translateX(10%);
+  transition: 2s;
+}
+
+.section4 button:first-of-type {
+  position: absolute;
+  bottom: 50%;
+  left: 0%;
+  z-index: 2;
+}
+.section4 button:nth-of-type(2) {
+  position: absolute;
+  bottom: 50%;
+  right: 0%;
+  z-index: 2;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .carousel {
+    width: 20vh;
+  }
+}
+.mt-ligne {
+  margin-top: 4%;
+}
+
 /*# sourceMappingURL=style.css.map */

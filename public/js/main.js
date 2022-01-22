@@ -1,3 +1,4 @@
+
 let barre = document.querySelector('.nav-responsive');
 let linav = document.querySelectorAll('.form>li')
 let section3 = document.querySelector('.section3')
@@ -9,7 +10,9 @@ let icon = document.querySelector('.icon')
 let header = document.querySelector('header')
 let panier = document.querySelector('.panier')
 let coeurlogo = document.querySelector('.coeur')
-
+let carousel = document.querySelector('.carousell')
+let droite = document.querySelector('.right')
+let gauche = document.querySelector('.left')
 barre.addEventListener('click', () => {
     linav.forEach(element => {
         if (element.style.display == "none") {
@@ -28,7 +31,7 @@ window.addEventListener('scroll', () => {
             element.style.color = "white"
         });
         nav.style.width = "100%"
-        header.style.height = "700px"
+        // header.style.height = "700px"
         nav.classList.remove("class", "mx-5")
         imgnav.setAttribute("src", "./public/img/white-logo.png")
         papaimg.style.textAlign = "center"
@@ -41,7 +44,7 @@ window.addEventListener('scroll', () => {
             element.style.color = "black"
         });
         imgnav.setAttribute("src", "./public/img/logo.png")
-        header.style.height = "780px"
+        // header.style.height = "780px"
     }
 })
 
@@ -264,8 +267,8 @@ tb_img.forEach((element, i) => {
         divmouse1.style.borderRight = "1px solid gray"
         pdiv1.style.cursor = "pointer"
         pdiv1.addEventListener('click', () => {
-            pdiv1.classList.toggle('click')
-            if (pdiv1.classList.contains('click') === true) {
+            bgimg.classList.toggle('click')
+            if (bgimg.classList.contains('click') === true) {
                 c++
                 panier.textContent = c
                 panier.style.display = "block"
@@ -316,3 +319,16 @@ tb_img.forEach((element, i) => {
 
 
 });
+// droite.style.backgroundColor = "transparent"
+// droite.style.border = "none"
+let d = 0
+let g = 0 
+droite.addEventListener('click',()=>{
+carousel.style.transform = `translate(-141%)`
+carousel.style.transition = "2s"
+
+})
+gauche.addEventListener('click',()=>{
+carousel.style.transform = `translate(10%)`
+carousel.style.transition = "2s"
+})
