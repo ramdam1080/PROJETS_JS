@@ -40,7 +40,7 @@
 
         </nav>
         <div class="border-nav"></div>
-        <div class="position-absolute blanc">
+        <div class="position-fixed blanc">
             <div class="petit text-center"><i class="fas fa-shopping-basket"></i></div>
             <div class="petit text-center"><i class="far fa-envelope"></i></div>
 
@@ -181,10 +181,11 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p>Lorem ipsum dolor sit amet. lorem</p>
         </div>
-        <div>
+        <div class="jsp">
             <div class="papacarousel position-relative">
                 <button class="left">
-                    <- </button> <button class="right"> ->
+                    <i class="fas fa-2x fa-angle-left"></i> </button> <button class="right"> <i
+                        class="fas fa-2x fa-angle-right"></i>
                 </button>
                 <div class="carousell droite row gap-3 flex-nowrap">
 
@@ -195,6 +196,10 @@
                                 assumenda est
                                 voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
                         </div>
+                        <div class="triangle"></div>
+                        <div class="bulle"> <img src="./public/img/testimonials/image-2.png" alt="" class="mt-2 ms-1 ">
+                        </div>
+
                     </div>
                     <div class=" p-0 pelement col-8">
                         <div class="elementc ">
@@ -202,6 +207,9 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi dolorum eos vitae
                                 assumenda est
                                 voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
+                        </div>
+                        <div class="triangle"></div>
+                        <div class="bulle"> <img src="./public/img/testimonials/image-1-1.png" alt="" class="mt-2 ms-1 ">
                         </div>
                     </div>
                     <div class=" p-0 pelement col-8">
@@ -211,13 +219,8 @@
                                 assumenda est
                                 voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
                         </div>
-                    </div>
-                    <div class=" p-0 pelement col-8">
-                        <div class="elementc ">
-                            <h5> Lorem ipsum dolor sit.</h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi dolorum eos vitae
-                                assumenda est
-                                voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
+                        <div class="triangle"></div>
+                        <div class="bulle"> <img src="./public/img/testimonials/image-3.png" alt="" class="mt-2 ms-1 ">
                         </div>
                     </div>
                     <div class=" p-0 pelement col-8">
@@ -227,13 +230,8 @@
                                 assumenda est
                                 voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
                         </div>
-                    </div>
-                    <div class=" p-0 pelement col-8">
-                        <div class="elementc ">
-                            <h5> Lorem ipsum dolor sit.</h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi dolorum eos vitae
-                                assumenda est
-                                voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
+                        <div class="triangle"></div>
+                        <div class="bulle"> <img src="./public/img/testimonials/image-1-1.png" alt="" class="mt-2 ms-1 ">
                         </div>
                     </div>
                     <div class=" p-0 pelement col-8">
@@ -242,6 +240,31 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi dolorum eos vitae
                                 assumenda est
                                 voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
+                        </div>
+                        <div class="triangle"></div>
+                        <div class="bulle"> <img src="./public/img/testimonials/image-2.png" alt="" class="mt-2 ms-1 ">
+                        </div>
+                    </div>
+                    <div class=" p-0 pelement col-8">
+                        <div class="elementc ">
+                            <h5> Lorem ipsum dolor sit.</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi dolorum eos vitae
+                                assumenda est
+                                voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
+                        </div>
+                        <div class="triangle"></div>
+                        <div class="bulle"> <img src="./public/img/testimonials/image-2.png" alt="" class="mt-2 ms-1 ">
+                        </div>
+                    </div>
+                    <div class=" p-0 pelement col-8">
+                        <div class="elementc ">
+                            <h5> Lorem ipsum dolor sit.</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi dolorum eos vitae
+                                assumenda est
+                                voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
+                        </div>
+                        <div class="triangle"></div>
+                        <div class="bulle"> <img src="./public/img/testimonials/image-1-1.png" alt="" class="mt-2 ms-1 ">
                         </div>
                     </div>
 
@@ -255,7 +278,7 @@
 
     <!-- debut de section 4  -->
     <!-- section 5  -->
-    <section class="py-5">
+    <section class="pt-5 section5">
         <div class="text-center py-5">
             <h2>Latest Blog</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, sint!</p>
@@ -263,61 +286,117 @@
         </div>
 
 
-<div class="container pb-3">
-<div class="row">
-<div class="col-sm-3"><img class="img-fluid" src="./public/img/blog/blog-listing-img63-578x771.jpg" alt="">
-<div class=" mt-5">
-    <button class="p-2 bg-black text-white border-0">PHOTOGRAPHY</button>
-<h6 class="my-4 me-5">Fashion is part of culture and its about More than just dress</h6>
-<div class="d-flex gap-1">
-<div class="ligne mt-ligne"></div>
-<p class="text-secondary">By acces Richard</p>
-</div>
-</div>
+        <div class="container pb-5 mb-5">
+            <div class="row">
+                <div class="col-sm-3"><img class="img-fluid" src="./public/img/blog/blog-listing-img63-578x771.jpg"
+                        alt="">
+                    <div class=" mt-5">
+                        <button class="p-2 bg-black text-white border-0">PHOTOGRAPHY</button>
+                        <h6 class="my-4 me-5">Fashion is part of culture and its about More than just dress</h6>
+                        <div class="d-flex gap-1">
+                            <div class="ligne mt-ligne"></div>
+                            <p class="text-secondary">By acces Richard</p>
+                        </div>
+                    </div>
 
-</div>
-<div class="col-sm-3"><img class="img-fluid" src="./public/img/blog/blog-listing-img58-578x771.jpg" alt="">
-    <div class=" mt-5">
-        <button class="p-2 bg-black text-white border-0">PHOTOGRAPHY</button>
-    <h6 class="my-4 me-5">I design make women feel confident and beautiful fashion</h6>
-    <div class="d-flex gap-1">
-    <div class="ligne mt-ligne"></div>
-    <p class="text-secondary">By acces Richard</p>
-    </div>
-    </div>
-    
+                </div>
+                <div class="col-sm-3"><img class="img-fluid" src="./public/img/blog/blog-listing-img58-578x771.jpg"
+                        alt="">
+                    <div class=" mt-5">
+                        <button class="p-2 bg-black text-white border-0">PHOTOGRAPHY</button>
+                        <h6 class="my-4 me-5">I design make women feel confident and beautiful fashion</h6>
+                        <div class="d-flex gap-1">
+                            <div class="ligne mt-ligne"></div>
+                            <p class="text-secondary">By acces Richard</p>
+                        </div>
+                    </div>
 
-</div>
-<div class="col-sm-3"><img class="img-fluid" src="./public/img/blog/blog-listing-img59-578x771.jpg" alt="">
 
-    <div class=" mt-5">
-        <button class="p-2 bg-black text-white border-0">PHOTOGRAPHY</button>
-    <h6 class="my-4 me-5">A designer is only as good as the star who whears her clothes</h6>
-    <div class="d-flex gap-1">
-    <div class="ligne mt-ligne"></div>
-    <p class="text-secondary">By acces Richard</p>
-    </div>
-    </div>
+                </div>
+                <div class="col-sm-3"><img class="img-fluid" src="./public/img/blog/blog-listing-img59-578x771.jpg"
+                        alt="">
 
-</div>
-<div class="col-sm-3"><img class="img-fluid" src="./public/img/blog/blog-listing-img60-578x771.jpg" alt="">
-    <div class=" mt-5">
-        <button class="p-2 bg-black text-white border-0">PHOTOGRAPHY</button>
-    <h6 class="my-4 me-5">handelies are marvels of drop dead showlness the jewellery</h6>
-    <div class="d-flex gap-1">
-    <div class="ligne mt-ligne"></div>
-    <p class="text-secondary">By acces Richard</p>
-    </div>
-    </div>
-</div>
+                    <div class=" mt-5">
+                        <button class="p-2 bg-black text-white border-0">PHOTOGRAPHY</button>
+                        <h6 class="my-4 me-5">A designer is only as good as the star who whears her clothes</h6>
+                        <div class="d-flex gap-1">
+                            <div class="ligne mt-ligne"></div>
+                            <p class="text-secondary">By acces Richard</p>
+                        </div>
+                    </div>
 
-</div>
-</div>
+                </div>
+                <div class="col-sm-3"><img class="img-fluid" src="./public/img/blog/blog-listing-img60-578x771.jpg"
+                        alt="">
+                    <div class=" mt-5">
+                        <button class="p-2 bg-black text-white border-0">PHOTOGRAPHY</button>
+                        <h6 class="my-4 me-5">handelies are marvels of drop dead showlness the jewellery</h6>
+                        <div class="d-flex gap-1">
+                            <div class="ligne mt-ligne"></div>
+                            <p class="text-secondary">By acces Richard</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- form -->
+        <div class="d-flex papaform flex-lg-row flex-column">
+            <div class="divform1"></div>
+            <div class="divform2">
+                <div class="container2 ">
+                    <div class="d-flex gap-4 ">
+                        <i class="fas fa-map-marker-alt mt-4"></i>
+                        <div>
+                            <p><b>Adress details</b></p>
+                            <p>401 Broadway,24h Floor <br> Iceland,Iceland 10013</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4 ">
+                        <i class="fas fa-envelope mt-4"></i>
+                        <div>
+                            <p><b>Email adress</b></p>
+                            <p>info@domain.com<br> info@domain.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <i class="fas fa-phone mt-4"></i>
+                        <div>
+                            <p><b>Telephone number</b></p>
+                            <p>4042545454 <br> 0485646485</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divform3">
+                <div class="p-4">
+                    <div class="container p-5">
+                        <h4 class="text-white ">
+                            Simply fill out the form and we 'il ben in touch whith you soon!'
+                            <form class="mt-4" action="">
+                                <input type="text" placeholder="Name*" class="p-3" value="">
+                                <input type="email" placeholder="E-mail*" class="p-3" value="">
+                                <input type="text" placeholder="subject" class="p-3" value="">
+                                <textarea name="your message" placeholder="your message" id="" cols="30"
+                                    rows="3"></textarea>
+
+                                    <button class="bg-white p-2 btninput">SEND MESSAGE</button>
+                            </form>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-6 d-flex gap-2 justify-content-center ">
+            <div class="ligne">
+                
+            </div>
+            <p>INSTAGRAM @HONGO FASHION</p>
 
 
     </section>
-<!-- fin de section 5 -->
-<!-- debut de section 6  -->
+    <!-- fin de section 5 -->
 
 
     <script src="./public/js/main.js"></script>

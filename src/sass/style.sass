@@ -194,17 +194,36 @@ nav
 
     overflow: hidden
 .carousell
-    width: 65vh
-
+    width: 64vh
+    margin-left: 20px
 .elementc
+    border-radius: 15px
     background-color: white
     padding: 20px
     // width:80%
     // transform: translateX(50%)
-
+.right
+    background-color: transparent
+    padding: 10px
+    border: none
+.left
+    background-color: transparent
+    padding: 10px
+    border: none
+.triangle
+    width: 0
+    height: 0
+    border: 0 solid transparent
+    border-right-width: 20px
+    border-left-width: 20px
+    border-top: 40px solid white
+    margin-left: 20px
 .droite
     transform: translateX(10%)
     transition: 2s
+.btninput
+    font-size: 15px
+    border: none
 .section4
     button:first-of-type
         position: absolute
@@ -216,11 +235,54 @@ nav
         bottom: 50%
         right: 0%
         z-index: 2
-@media (min-width: 576px) and ( max-width: 768px  )
-    .carousel
-        width: 20vh
-
-
 
 .mt-ligne
-    margin-top: 4%  
+    margin-top: 4%
+.papaform
+    height: 550px
+.divform1
+    flex: 5
+    background-image: url('../../public/img/collect/one-page-img-04.jpg')
+    background-size: cover
+.bulle
+
+    img
+        border-radius: 50%
+        width: 80px
+.divform2
+    background-color: #e6e6cc
+
+    display: flex
+    flex-direction: column
+    // align-items: center
+    justify-content: center
+    flex: 4
+.divform3
+    flex: 5.9
+    background-image: url('../../public/img/fashion/fashion-brand-parallax-bg.jpg')
+    background-size: cover
+input,textarea
+    font-size: 14px
+    margin-bottom: 20px
+    width: 100%
+    background-color: transparent
+    border: none
+    border-bottom: solid gray 2px
+.py-6
+    padding: 150px 0
+    font-weight: bold
+@media (min-width: 576px) and ( max-width: 768px  )
+    .papaform
+        height: 1500px
+    .papacarousel
+        width: 100vh
+
+@media (max-width: 576px)
+    .papaform
+        height: 1500px
+    .papacarousel
+        width: 80%
+    .carousell
+        width: 38vh
+    .jsp
+        width: 100%

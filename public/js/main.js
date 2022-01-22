@@ -1,4 +1,3 @@
-
 let barre = document.querySelector('.nav-responsive');
 let linav = document.querySelectorAll('.form>li')
 let section3 = document.querySelector('.section3')
@@ -13,6 +12,11 @@ let coeurlogo = document.querySelector('.coeur')
 let carousel = document.querySelector('.carousell')
 let droite = document.querySelector('.right')
 let gauche = document.querySelector('.left')
+let element = document.querySelectorAll('.pelement')
+let petit = document.querySelector('.petit')
+
+
+
 barre.addEventListener('click', () => {
     linav.forEach(element => {
         if (element.style.display == "none") {
@@ -27,6 +31,7 @@ window.addEventListener('scroll', () => {
         nav.style.position = "fixed"
         nav.style.top = "0px"
         nav.style.backgroundColor = "black"
+        petit.style.marginTop = "40px"
         ulnav.forEach(element => {
             element.style.color = "white"
         });
@@ -38,6 +43,7 @@ window.addEventListener('scroll', () => {
         icon.style.justifyContent = "center"
         icon.classList.remove("justify-content-end")
     } else {
+        petit.style.marginTop = "10px"
         nav.removeAttribute('style', 'position')
         nav.style.backgroundColor = ""
         ulnav.forEach(element => {
@@ -132,9 +138,9 @@ tb_img.forEach((element, i) => {
     prix.innerHTML = element.t
     prix.style.color = "gray"
     container.appendChild(prix)
-    
-    
-    
+
+
+
     bgimg.style.position = "relative"
     let promo = document.createElement('div')
     if (i == 3) {
@@ -283,7 +289,7 @@ tb_img.forEach((element, i) => {
 
             }
         })
-        
+
         coeur.addEventListener('click', () => {
             container.classList.toggle('click')
             if (container.classList.contains('click') === true) {
@@ -322,13 +328,23 @@ tb_img.forEach((element, i) => {
 // droite.style.backgroundColor = "transparent"
 // droite.style.border = "none"
 let d = 0
-let g = 0 
-droite.addEventListener('click',()=>{
-carousel.style.transform = `translate(-141%)`
-carousel.style.transition = "2s"
+// let g = 0 
+droite.addEventListener('click', () => {
+    d++
+    carousel.style.transform = `translate(${-70*d}% )`
+    carousel.style.transition = "2s"
+    
+   
+    if (d == 5) {
+        d = 0
+        carousel.style.transform = `translate(${-70*d}% )`
+    }
 
 })
-gauche.addEventListener('click',()=>{
-carousel.style.transform = `translate(10%)`
-carousel.style.transition = "2s"
+gauche.addEventListener('click', () => {
+    d--
+    carousel.style.transform = `translate(${-70*d}%)`
+    carousel.style.transition = "2s"
 })
+
+// console.log(element);
