@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class=" position-relative pe-3 ">
+    <header class=" position-relative pe-3 " id="home" >
         <nav class="d-flex pt-3   justify-content-between  mx-5  navbar ">
             <div class="parentlogo">
                 <img class="logo mb-3" src="./public/img/logo.png" alt="">
@@ -18,12 +18,13 @@
 
             <ul class="d-flex justify-content-evenly form  ">
                 <i class="fas fa-bars nav-responsive"></i>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SHOP</a></li>
-                <li><a href="">TESTMONIAL</a></li>
-                <li><a href="">JOURNAL</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#testimonial">TESTMONIAL</a></li>
+                <li><a href="#journal">JOURNAL</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+               
             </ul>
 
             <ul class="d-flex justify-content-end icon">
@@ -35,11 +36,15 @@
                 <li class="mx-2"><a href=""><i class="fas fa-shopping-basket  position-relative">
                             <div class="panier"></div>
                         </i></a></li>
+                        
             </ul>
 
+            <div class="theme ms-3">
+                                
+            </div>
 
         </nav>
-        <div class="border-nav"></div>
+        <div class="border-nav" id="header"></div>
         <div class="position-fixed blanc">
             <div class="petit text-center"><i class="fas fa-shopping-basket"></i></div>
             <div class="petit text-center"><i class="far fa-envelope"></i></div>
@@ -95,9 +100,14 @@
         <h1 class="text-white women text-center mt-5">WOMENS</h1>
     </header>
     <!-- fin header -->
+<!-- scroll up -->
+
+<a href="#header" class="scrollup"> scroll up -></a>
+
+
 
     <!-- section1 -->
-    <section>
+    <section id="about">
         <div class="d-flex container justify-content-evenly section1">
             <div>
                 <p><i class="fas fa-globe "></i> FREE STANDARD SHIPPING</p>
@@ -140,7 +150,7 @@
     </section>
     <!-- fin de section1 -->
     <!-- section2 -->
-    <section class="section2">
+    <section class="section2" >
         <div class="container2 p">
             <div class="row align-items-center">
                 <div class="col-sm-6">
@@ -168,14 +178,14 @@
     </section>
     <!-- fin de section2 -->
     <!-- debut section 3 JS -->
-    <section class="section3">
+    <section class="section3" id="shop">
 
 
 
     </section>
     <!-- fin de section3JS -->
     <!-- debut section 4-->
-    <section class="section4 p-5">
+    <section class="section4 p-5" id="testimonial">
         <div class="text-center p-5">
             <h2>Testtimonial</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -209,7 +219,8 @@
                                 voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
                         </div>
                         <div class="triangle"></div>
-                        <div class="bulle"> <img src="./public/img/testimonials/image-1-1.png" alt="" class="mt-2 ms-1 ">
+                        <div class="bulle"> <img src="./public/img/testimonials/image-1-1.png" alt=""
+                                class="mt-2 ms-1 ">
                         </div>
                     </div>
                     <div class=" p-0 pelement col-8">
@@ -231,7 +242,8 @@
                                 voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
                         </div>
                         <div class="triangle"></div>
-                        <div class="bulle"> <img src="./public/img/testimonials/image-1-1.png" alt="" class="mt-2 ms-1 ">
+                        <div class="bulle"> <img src="./public/img/testimonials/image-1-1.png" alt=""
+                                class="mt-2 ms-1 ">
                         </div>
                     </div>
                     <div class=" p-0 pelement col-8">
@@ -264,7 +276,8 @@
                                 voluptate optio deserunt possimus iste odit nam, molestiae totam ut odio?</p>
                         </div>
                         <div class="triangle"></div>
-                        <div class="bulle"> <img src="./public/img/testimonials/image-1-1.png" alt="" class="mt-2 ms-1 ">
+                        <div class="bulle"> <img src="./public/img/testimonials/image-1-1.png" alt=""
+                                class="mt-2 ms-1 ">
                         </div>
                     </div>
 
@@ -278,7 +291,7 @@
 
     <!-- debut de section 4  -->
     <!-- section 5  -->
-    <section class="pt-5 section5">
+    <section class="pt-5 section5" id="journal">
         <div class="text-center py-5">
             <h2>Latest Blog</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, sint!</p>
@@ -342,7 +355,7 @@
         </div>
 
         <!-- form -->
-        <div class="d-flex papaform flex-lg-row flex-column">
+        <div class="d-flex papaform flex-lg-row flex-column" id="contact">
             <div class="divform1"></div>
             <div class="divform2">
                 <div class="container2 ">
@@ -381,7 +394,7 @@
                                 <textarea name="your message" placeholder="your message" id="" cols="30"
                                     rows="3"></textarea>
 
-                                    <button class="bg-white p-2 btninput">SEND MESSAGE</button>
+                                <button class="bg-white p-2 btninput">SEND MESSAGE</button>
                             </form>
                         </h4>
                     </div>
@@ -390,7 +403,7 @@
         </div>
         <div class="py-6 d-flex gap-2 justify-content-center ">
             <div class="ligne">
-                
+
             </div>
             <p>INSTAGRAM @HONGO FASHION</p>
 
@@ -398,7 +411,107 @@
     </section>
     <!-- fin de section 5 -->
 
+    <!-- footer -->
+    <footer class="footer  ">
+        <div class="container pt-3">
+            <div class="d-flex align-items-center justify-content-evenly ">
+                <div class=" align-items-center  d-flex">
+                    <p class="last me-3 mt-3">LAST CHANCE TO WIN OUR DISCOUNT!</p>
+                    <input placeholder="Enter your email..." type="email"> <button class="px-4">SUBSCRIBE -></button>
+                </div>
+                <div class="d-flex align-items-center">
+                    <p class="last mt-2">ON SOCIAL NETWORKS</p>
+                    <ul class="d-flex">
+                        <li class=" mx-2"><i class="fab fa-facebook-f"></i></li>
+                        <li class=" mx-2"><i class="fab fa-twitter"></i></li>
+                        <li class=" mx-2"><i class="fab fa-linkedin-in"></i></li>
+                        <li class=" mx-2"><i class="fab fa-instagram"></i></li>
+                        <li class=" mx-2"><i class="fab fa-pinterest-p"></i></li>
+                    </ul>
 
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container2 mt-5">
+            <div class="row matete" >
+                <div class="col-sm-3">
+                    <img class="mb-3" src="./public/img/white-logo.png" alt="">
+                    <br>
+                    <span >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, praesentium sequi nobis
+                        error unde fugit eaque eos quasi aut voluptates.</span>
+                </div>
+                <div class="col-sm-2">
+                    <h6>CATEGORIE</h6>
+                    <p>Women collection </p>
+                    <p>Men collection </p>
+                    <p>Child collection </p>
+                    <p>Accesoiries</p>
+                    <p>Leather shoes</p>
+                </div>
+                <div class="col-sm-2">
+                    <h6>CUSTOMER</h6>
+                    <p>hELP and support</p>
+                    <p>Shipping and delivry</p>
+                    <p>Payment method</p>
+                    <p>Terms and condtions</p>
+                    <p>Privacy policy</p>
+                </div>
+                <div class="col-sm-2">
+                    <h6>COMPANY</h6>
+                    <p>About company</p>
+                    <p>Our service</p>
+                    <p>Get the voucher</p>
+                    <p>store locator</p>
+                    <p>contact us</p>
+                </div>
+                <div class="col-sm-3 ">
+                    <h6 class="mb-3">FOLLOW US ONE INSTAGRAM</h6>
+                    <div class="row">
+                        <div class="col-sm-3 "><img class="img-fluid" src="./public/img/footer/infa-01.jpg" alt="">
+                        </div>
+                        <div class="col-sm-3 "><img src="./public/img/footer/infa-02.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-3 "><img src="./public/img/footer/infa-03.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-3 "><img src="./public/img/footer/infa-04.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-3 mt-3 "><img src="./public/img/footer/infa-05.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-3 mt-3 "><img src="./public/img/footer/infa-06.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-3 mt-3 "><img src="./public/img/footer/infa-07.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-3 mt-3 "><img src="./public/img/footer/infa-08.jpg" alt="" class="img-fluid">
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+        <div class="d-flex justify-content-around mt-4 bg-black align-items-center py-2">
+
+            <p class="mt-2 text-secondary">@2022 HONGO is proudly Powered by ThemeZaa</p>
+
+            <div class="pe-3 mt-2">
+                <img src="./public/img/footer-payment-icon.png" alt="">
+            </div>
+        </div>
+
+    </footer>
     <script src="./public/js/main.js"></script>
 </body>
 

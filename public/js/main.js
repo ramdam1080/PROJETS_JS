@@ -14,9 +14,12 @@ let droite = document.querySelector('.right')
 let gauche = document.querySelector('.left')
 let element = document.querySelectorAll('.pelement')
 let petit = document.querySelector('.petit')
+let theme = document.querySelector('.theme')
+let body = document.querySelector('body')
+let h2 = document.querySelectorAll('h2')
+let fs = document.querySelectorAll('.fs-7')
 
-
-
+theme.style.backgroundColor = "black"
 barre.addEventListener('click', () => {
     linav.forEach(element => {
         if (element.style.display == "none") {
@@ -27,11 +30,15 @@ barre.addEventListener('click', () => {
     });
 })
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= 408) {
+    if (window.scrollY >= 758) {
         nav.style.position = "fixed"
         nav.style.top = "0px"
         nav.style.backgroundColor = "black"
         petit.style.marginTop = "40px"
+        if (theme.style.backgroundColor == "black") {
+            theme.style.backgroundColor = "gray"
+
+        }
         ulnav.forEach(element => {
             element.style.color = "white"
         });
@@ -43,6 +50,10 @@ window.addEventListener('scroll', () => {
         icon.style.justifyContent = "center"
         icon.classList.remove("justify-content-end")
     } else {
+        if (theme.style.backgroundColor == "gray") {
+            theme.style.backgroundColor = "black"
+        }
+
         petit.style.marginTop = "10px"
         nav.removeAttribute('style', 'position')
         nav.style.backgroundColor = ""
@@ -333,8 +344,8 @@ droite.addEventListener('click', () => {
     d++
     carousel.style.transform = `translate(${-70*d}% )`
     carousel.style.transition = "2s"
-    
-   
+
+
     if (d == 5) {
         d = 0
         carousel.style.transform = `translate(${-70*d}% )`
@@ -347,4 +358,40 @@ gauche.addEventListener('click', () => {
     carousel.style.transition = "2s"
 })
 
-// console.log(element);
+let section3p = document.querySelectorAll('.section3 p')
+let section5p = document.querySelectorAll('.section5 p ,.section5 h6')
+let about = document.querySelectorAll('#about b ,#about p')
+
+theme.addEventListener('click', () => {
+    if (theme.style.backgroundColor == "black" || theme.style.backgroundColor == "gray") {
+        theme.style.backgroundColor = "white"
+        body.style.backgroundColor = "black"
+        h2[3].style.color = "white"
+        h3.style.color = "white"
+        section3p.forEach(element => {
+            element.style.color = "white"
+        });
+        about.forEach(element => {
+            element.style.color = "white"
+        });
+        section5p.forEach(element => {
+            element.style.color = "white"
+        });
+
+    } else {
+        theme.style.backgroundColor = "black"
+        body.style.backgroundColor = "white"
+        h2[3].style.color = "black"
+        h3.style.color = "black"
+        section3p.forEach(element => {
+            element.style.color = "black"
+        });
+        about.forEach(element => {
+            element.style.color = "black"
+        });
+        section5p.forEach(element => {
+            element.style.color = "black"
+        });
+    }
+
+})
