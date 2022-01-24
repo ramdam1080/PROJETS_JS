@@ -17674,4 +17674,14 @@ footer .matete span {
   border-radius: 50%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  #about img {
+    width: 200px;
+  }
+
+  .section2 img {
+    width: 300px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
