@@ -162,7 +162,7 @@ tb_img.forEach((element, i) => {
         promo.style.backgroundColor = "green"
         let p20 = document.createElement('p')
         p20.textContent = "-20%"
-        p20.style.color = "white"
+        p20.classList.add('text-white')
         promo.appendChild(p20)
         p20.style.fontSize = "12px"
         promo.style.height = "20px"
@@ -175,7 +175,7 @@ tb_img.forEach((element, i) => {
         promo.style.backgroundColor = "green"
         let p12 = document.createElement('p')
         p12.textContent = "-12%"
-        p12.style.color = "white"
+        p12.classList.add('text-white')
         promo.appendChild(p12)
         p12.style.fontSize = "12px"
         promo.style.height = "20px"
@@ -189,7 +189,7 @@ tb_img.forEach((element, i) => {
         promo.style.backgroundColor = "green"
         let p14 = document.createElement('p')
         p14.textContent = "-14%"
-        p14.style.color = "white"
+        p14.classList.add('text-white')
         promo.appendChild(p14)
         p14.style.fontSize = "12px"
         promo.style.height = "20px"
@@ -202,7 +202,7 @@ tb_img.forEach((element, i) => {
         promo.style.backgroundColor = "green"
         let p14 = document.createElement('p')
         p14.textContent = "-14%"
-        p14.style.color = "white"
+        p14.classList.add('text-white')
         promo.appendChild(p14)
         p14.style.fontSize = "12px"
         promo.style.height = "20px"
@@ -217,6 +217,7 @@ tb_img.forEach((element, i) => {
         let p18 = document.createElement('p')
         p18.textContent = "-18%"
         p18.style.color = "white"
+        p18.classList.add('text-white')
         promo.appendChild(p18)
         p18.style.fontSize = "12px"
         promo.style.height = "20px"
