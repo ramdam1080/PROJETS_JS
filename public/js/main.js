@@ -17,6 +17,7 @@ let petit = document.querySelector('.petit')
 let theme = document.querySelector('.theme')
 let body = document.querySelector('body')
 let h2 = document.querySelectorAll('h2')
+let modal = document.querySelector('.modall')
 let fs = document.querySelectorAll('.fs-7')
 
 theme.style.backgroundColor = "black"
@@ -32,6 +33,7 @@ barre.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 758) {
         nav.style.position = "fixed"
+        modal.style.color="White"
         nav.style.top = "0px"
         nav.style.backgroundColor = "black"
         petit.style.marginTop = "40px"
@@ -50,6 +52,7 @@ window.addEventListener('scroll', () => {
         icon.style.justifyContent = "center"
         icon.classList.remove("justify-content-end")
     } else {
+        modal.style.color = "black"
         if (theme.style.backgroundColor == "gray") {
             theme.style.backgroundColor = "black"
         }
